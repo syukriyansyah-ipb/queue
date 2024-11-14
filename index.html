@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Queue Array Sirkular</title>
-    <link rel="stylesheet" href="queue.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Queue Array Sirkular</h1>
         <div class="queue">
             <input type="number" id="inputValue" placeholder="Tambah elemen ke Queue">
-            <button onclick="enqueue()">Enqueue</button>
-            <button onclick="dequeue()">Dequeue</button>
+            <div>
+                <button onclick="enqueue()">Enqueue</button>
+                <button onclick="dequeue()">Dequeue</button>
+            </div>
+            
+            <div class="indexes">
+                <p>Front Index: <span id="frontIndex">-</span></p>
+                <p>Rear Index: <span id="rearIndex">-</span></p>
+            </div>
             <div id="queueDisplay" class="queue-display"></div>
         </div>
     </div>
-    <script src="queue.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

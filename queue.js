@@ -3,16 +3,22 @@ let queue = Array(queueSize).fill(null); // Inisialisasi array queue dengan nila
 let front = -1;
 let rear = -1;
 
-// Menampilkan queue
+// Menampilkan queue dan indeks front dan rear
 function displayQueue() {
     const display = document.getElementById("queueDisplay");
     display.innerHTML = "";
+
+    // Tampilkan elemen queue
     queue.forEach(item => {
         const queueItem = document.createElement("div");
         queueItem.classList.add("queue-item");
         queueItem.textContent = item !== null ? item : ""; // Jika null, tampilkan kosong
         display.appendChild(queueItem);
     });
+
+    // Tampilkan indeks front dan rear
+    document.getElementById("frontIndex").textContent = front !== -1 ? front : "-";
+    document.getElementById("rearIndex").textContent = rear !== -1 ? rear : "-";
 }
 
 // Menambahkan elemen ke queue
