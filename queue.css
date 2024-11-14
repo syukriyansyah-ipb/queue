@@ -16,6 +16,29 @@ body {
     text-align: center;
 }
 
+.btn {
+    border-radius: 10px;
+}
+
+.btn-red{
+    background-color: #B32113;
+    border: 0;
+    padding: 10px 20px;
+    color: white;
+}
+.btn-red:hover{
+    background-color: #B31005;
+}
+.btn-green{
+    background-color: #046200;
+    border: 0;
+    padding: 10px 20px;
+    color: white;
+}
+.btn-green:hover{
+    background-color: #004d14;
+}
+
 .queue {
     margin-top: 20px;
 }

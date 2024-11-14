@@ -3,12 +3,10 @@ let queue = Array(queueSize).fill(null); // Inisialisasi array queue dengan nila
 let front = -1;
 let rear = -1;
 
-// Menampilkan queue dan indeks front dan rear
+// Menampilkan queue
 function displayQueue() {
     const display = document.getElementById("queueDisplay");
     display.innerHTML = "";
-
-    // Tampilkan elemen queue
     queue.forEach(item => {
         const queueItem = document.createElement("div");
         queueItem.classList.add("queue-item");
@@ -16,7 +14,6 @@ function displayQueue() {
         display.appendChild(queueItem);
     });
 
-    // Tampilkan indeks front dan rear
     document.getElementById("frontIndex").textContent = front !== -1 ? front : "-";
     document.getElementById("rearIndex").textContent = rear !== -1 ? rear : "-";
 }
